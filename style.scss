@@ -1,0 +1,75 @@
+$primary-color: MidnightBlue;
+$secondary-color: DarkMagenta;
+$light-color: #fff;
+$shadow-color: #666;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $light-color;
+  
+  p {
+    color: $secondary-color;
+    text-align: center;
+  }
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: $primary-color;
+  outline: none;
+  color: $light-color;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popupBox-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  
+  .popupBox {
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: $light-color;
+    position: relative;
+    box-shadow: 2px 2px 4px $shadow-color;
+    
+    &-close {
+      border: 1px solid $shadow-color;
+      border-radius: 50%;
+      color: $shadow-color;
+      position: absolute;
+      top: 5px;
+      right: 8px;
+      padding: 2px 5px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    
+    &-content {
+      h1 {
+        color: $secondary-color;
+      }
+      p {
+        margin-bottom: 20px;
+        color: $primary-color;
+      }
+      a {
+        background-color: $primary-color;
+        color: $light-color;
+        text-decoration: none;
+        padding: 7px 12px;
+      }
+    }
+  }
+}
