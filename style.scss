@@ -17,6 +17,7 @@ button {
   display: block;
   margin: 20px auto;
   background-color: $primary-color;
+  border-radius: 4px;
   outline: none;
   color: $light-color;
   border: none;
@@ -43,8 +44,9 @@ button {
     width: 100%;
     max-width: 300px;
     margin: 15% auto;
-    padding: 20px;
+    padding: 40px 20px;
     background-color: $light-color;
+    border-radius: 4px;
     position: relative;
     box-shadow: 2px 2px 4px $shadow-color;
     
@@ -63,6 +65,7 @@ button {
     &-content {
       h1 {
         color: $secondary-color;
+        margin: 0;
       }
       p {
         margin-bottom: 20px;
@@ -70,6 +73,7 @@ button {
       }
       a {
         background-color: $primary-color;
+        border-radius: 4px;
         color: $light-color;
         text-decoration: none;
         padding: 7px 12px;
