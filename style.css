@@ -20,6 +20,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: DarkMagenta;
+}
+
 .popupBox-container {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -33,7 +37,7 @@ button {
 .popupBox-container .popupBox {
   text-align: center;
   width: 100%;
-  max-width: 320px;
+  max-width: 300px;
   margin: 15% auto;
   padding: 20px;
   background-color: #fff;
@@ -48,7 +52,7 @@ button {
   color: #666;
   position: absolute;
   top: 5px;
-  right: 8px;
+  right: 5px;
   padding: 2px 5px;
   font-size: 13px;
   cursor: pointer;
@@ -68,4 +72,8 @@ button {
   color: #fff;
   text-decoration: none;
   padding: 7px 12px;
+}
+
+.popupBox-container .popupBox-content a:hover {
+  background-color: DarkMagenta;
 }
